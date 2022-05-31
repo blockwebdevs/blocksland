@@ -1,0 +1,236 @@
+.caption-style-1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.caption-style-1 .item {
+    float: left;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.caption-style-1 .item:hover .caption {
+    opacity: 1;
+}
+.caption-style-1 img {
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 4;
+}
+.caption-style-1 .caption {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+    -webkit-transition-delay: 0.4s;
+}
+.caption-style-1 .blur {
+    background-color: rgba(255, 255, 255, 0.65);
+    height: 430px;
+    width: 110%;
+    z-index: 5;
+    position: absolute;
+    left: -10px;
+    margin-top: -10px;
+}
+.caption-style-1 .caption-text h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.caption-style-1 .caption-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-label {
+    position: absolute;
+    top: 60%;
+    left: -10px;
+    padding-left: 40px;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    height: 60px;
+    line-height: 60px;
+    width: 70%;
+    font-size: 20px;
+    font-family: Poppins;
+    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+    text-transform: uppercase;
+    -webkit-transition-delay: 0.4s;
+}
+.car-item:hover .img-label {
+    left: -100%;
+}
+.image--cover {
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+.btn-option {
+    padding: 10px 13px;
+    background-color: #fff;
+    text-align: center;
+    min-width: 120px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    color: #2c3e50;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.btn-option:hover {
+    background-color: transparent;
+    color: #000;
+}
+.share-buttons {
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    width: 60px;
+    text-align: center;
+    z-index: 9999;
+}
+.share-buttons .share-links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+}
+.share-buttons a {
+    display: block;
+    background-color: #ffcf27;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 12px auto;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition-delay: 0.35s;
+}
+.share-btn {
+    position: relative;
+}
+.share-buttons a i {
+    color: #fff;
+    font-size: 22px;
+    line-height: 50px;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition-delay: 0.35s;
+}
+.share-btn a {
+    position: relative;
+}
+.share-btn a:after {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    -webkit-animation: widgetPulse infinite 1.5s;
+    animation: widgetPulse infinite 1.5s;
+    content: "";
+    z-index: 3;
+}
+.share-btn a:before {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 207, 39, 0.2);
+    -webkit-animation: widgetPulse infinite 1.5s;
+    animation: widgetPulse infinite 1.5s;
+    content: "";
+    z-index: 4;
+}
+@keyframes widgetPulse {
+    0% {
+        bottom: -2px;
+        right: -2px;
+        left: -2px;
+        top: -2px;
+    }
+    100% {
+        bottom: -12px;
+        right: -12px;
+        left: -12px;
+        top: -12px;
+    }
+}
+.share-buttons a:hover {
+    box-shadow: 0 0 5px 0 rgb(250 250 250) !important;
+}
+.share-buttons a:hover i {
+    font-size: 25px;
+}
+.share-buttons:hover .share-links {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+}
+.share-buttons:hover .share-btn a:before {
+    animation: widgetPulse infinite 0s;
+}
+.share-buttons:hover .share-btn a:after {
+    animation: widgetPulse infinite 0s;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.share__icon--facebook {
+    background-color: #4267b2 !important;
+}
+.share__icon--instagram {
+    background-color: #833ab4 !important;
+}
+.share__icon--viber {
+    background-color: #665cac !important;
+}
+.share__icon--telegram {
+    background-color: #08c !important;
+}
+.share__icon--whatsapp {
+    background-color: #25d366 !important;
+}
+.icon--facebook i {
+    color: #4267b2 !important;
+}
+.icon--instagram i {
+    color: #833ab4 !important;
+}
+.icon--viber i {
+    color: #665cac !important;
+}
+.icon--telegram i {
+    color: #08c !important;
+}
+.icon--whatsapp i {
+    color: #25d366 !important;
+}
+.share-btn a i {
+    font-size: 15px;
+}
+.share-btn a:hover i {
+    font-size: 15px;
+}
