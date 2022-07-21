@@ -24,7 +24,7 @@
                                         data-tweet-text="share on twitter 1">
                                         <img src="{{ asset('/images/products/og/'.$image->src) }}"
                                              alt="{{ $product->translation->name .' '. $product->translation->subtitle }} ({{ $key + 1 }} / {{ $product->images->count() }})"
-                                             title="{{ $product->translation->subtitle .' '. $product->translation->name }} {{ $key + 1 }} manoleestate"/>
+                                             title="{{ $product->translation->subtitle .' '. $product->translation->name }} {{ $key + 1 }} "/>
                                     </li>
                                 @endforeach
                             </ul>
@@ -35,7 +35,7 @@
                                     <li>
                                         <img src="{{ asset('/images/products/sm/'.$image->src) }}"
                                              alt="{{ $product->translation->name .' '. $product->translation->subtitle }} photo {{ $key + 1 }}"
-                                             title="{{ $product->translation->subtitle .' '. $product->translation->name }} {{ $key + 1 }} manoleestate"/>
+                                             title="{{ $product->translation->subtitle .' '. $product->translation->name }} {{ $key + 1 }} "/>
                                     </li>
                                 @endforeach
                             </ul>

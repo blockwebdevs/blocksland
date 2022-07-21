@@ -45,11 +45,11 @@
                                     @if($product->mainImage)
                                         <img src="{{ asset('/images/products/sm/' . $product->mainImage->src)  }}"
                                              alt="{{ $product->translation->name .' '. $product->translation->subtitle }} photo"
-                                             title="{{ $product->translation->subtitle .' '. $product->translation->name }} manoleestate">
+                                             title="{{ $product->translation->subtitle .' '. $product->translation->name }} blocksland">
                                     @else
                                         <img src="{{ asset('/images/stub.png')  }}"
-                                             alt="manoleestate photo"
-                                             title="manoleestate">
+                                             alt="blocksland photo"
+                                             title="blocksland">
                                     @endif
                                 </a>
                                 <div class="prod-params">
