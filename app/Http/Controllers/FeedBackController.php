@@ -60,7 +60,7 @@ class FeedBackController extends Controller
         $feedback->phone = request('phone');
         $feedback->message = request('message');
         $feedback->additional_1 = request('url');
-        $feedback->additional_2 = request('agent_email');
+//        $feedback->additional_2 = request('agent_email');
         $feedback->additional_3 = request('contact_method');
         $feedback->subject = 'order call';
         $feedback->status = 'new';
